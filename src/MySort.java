@@ -13,7 +13,7 @@ public class MySort extends Sorting {
             Integer maxValue = sortList.get(i);
             Integer maxIndex = i;
             for (int j = i; j < sortList.size(); j++) {
-                if(sortList.get(j) > maxValue)
+                if(sortList.get(j) < maxValue)
                 {
                     maxIndex = j;
                     maxValue = sortList.get(j);

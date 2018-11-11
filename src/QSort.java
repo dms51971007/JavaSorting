@@ -66,7 +66,8 @@ public class QSort extends Sorting {
         Integer pivValue = sortList.get((i + j) / 2);
 
         while (i < j) {
-            while (compare(pivValue, sortList.get(i))) i++;
+            while (compare(pivValue, sortList.get(i)))
+                i++;
             while (compare(sortList.get(j), pivValue))
                 j--;
 
@@ -75,9 +76,8 @@ public class QSort extends Sorting {
 
         }
 
-        if (begin < j) qSort(begin, j);
         if (i < end) qSort(i, end);
-
+        if (begin < j) qSort(begin, j);
 
     }
 
